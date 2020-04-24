@@ -13,7 +13,4 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Puppeteer under /node_modules so it's available system-wide
-RUN npm init -f
 RUN npm i puppeteer
-
-# ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
